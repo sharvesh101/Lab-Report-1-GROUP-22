@@ -22,7 +22,7 @@ int replace(char *str)
 
 int main(void)               // Main function: program starts here
 {
-    char data[200];           // Create a string that can hold 199 characters
+    char data[50];           // Create a string
     int n;                   // Store the number of spaces replaced
 
     printf("Enter a string: "); // Ask the user to enter a string

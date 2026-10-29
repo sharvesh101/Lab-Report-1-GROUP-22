@@ -25,7 +25,7 @@ void code(char *str)
 
 int main(void)                   // Main function: program starts here
 {
-    char data[200];               // Create space to store the input string
+    char data[50];               // Create space to store the input string
 
     printf("Enter a string: ");  // Ask the user to enter a string
 
