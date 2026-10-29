@@ -22,20 +22,20 @@ int replace(char *str)
 
 int main(void)               // Main function: program starts here
 {
-    char cat[200];           // Create a string that can hold 199 characters
+    char data[200];           // Create a string that can hold 199 characters
     int n;                   // Store the number of spaces replaced
 
     printf("Enter a string: "); // Ask the user to enter a string
 
-    fgets(cat, sizeof(cat), stdin); // Read the input, including spaces
+    fgets(data, sizeof(data), stdin); // Read the input, including spaces
 
-    cat[strcspn(cat, "\n")] = '\0'; // Remove the newline at the end
+    data[strcspn(data, "\n")] = '\0'; // Remove the newline at the end
 
-    printf("String was : %s\n", cat); // Print the original string
+    printf("String was : %s\n", data); // Print the original string
 
-    n = replace(cat);        // Replace spaces and store the count
+    n = replace(data);        // Replace spaces and store the count
 
-    printf("String is : %s\n", cat); // Print the modified string
+    printf("String is : %s\n", data); // Print the modified string
     printf("Number replaced %d\n", n); // Print the number replaced
 
     return 0;                // End the program successfully

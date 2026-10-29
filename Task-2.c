@@ -25,19 +25,19 @@ void code(char *str)
 
 int main(void)                   // Main function: program starts here
 {
-    char cat[200];               // Create space to store the input string
+    char data[200];               // Create space to store the input string
 
     printf("Enter a string: ");  // Ask the user to enter a string
 
-    fgets(cat, sizeof(cat), stdin); // Read the input, including spaces
+    fgets(data, sizeof(data), stdin); // Read the input, including spaces
 
-    cat[strcspn(cat, "\n")] = '\0'; // Remove the newline at the end
+    data[strcspn(data, "\n")] = '\0'; // Remove the newline at the end
 
-    printf("String was : %s\n", cat); // Print the original string
+    printf("String was : %s\n", data); // Print the original string
 
-    code(cat);                   // Encode the string
+    code(data);                   // Encode the string
 
-    printf("String is : %s\n", cat); // Print the encoded string
+    printf("String is : %s\n", data); // Print the encoded string
 
     return 0;                    // End the program successfully
 }
